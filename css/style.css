@@ -13,8 +13,20 @@ html, body {
 }
 
 #allotment {
-  width: 600px;
-  height: 420px;
+ /* width: 600px;
+  height: 420px;*/
   border: 1px solid #f0f0f0;
   margin-bottom: 10vh;
+  background: #f0f0f0;
+}
+
+.row-guide {
+  fill: none;
+  stroke: #e0e0e0;
+  stroke-width: 1px;
+  /*stroke-dashoffset: 1000;*/
+}
+
+svg {
+  border: 1px solid black;
 }

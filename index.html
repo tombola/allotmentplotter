@@ -14,34 +14,6 @@
     </div>
   </div>
 
-<script>
-  $allotment = d3.select("#allotment");
-  plantingRow = [ 2, 6, 8, 4, 6, 8, 3, 4]
-  plotWidth = 500;
-  plotHeight = 400;
-  plantingDistance = 30;
-  rowDistance = 40;
-
-  // $allotment.append("p").text("My allotment");
-  var $plot = $allotment.append('svg')
-    .attr('width', plotWidth)
-    .attr('height', plotHeight)
-
-  $plants = $plot.selectAll('circle')
-    .data(plantingRow)
-    .enter()
-    .append('circle')
-    .attr("fill", 'none')
-    .attr("stroke", '#000')  
-
-  $plants.attr('cy', function(d, i) {
-        return ((i + 1) * plantingDistance);
-    })
-   .attr('cx', rowDistance)
-   .attr("r", function(d) {
-        return d;
-   });
-
-</script>
+<script src="js/script.js"></script>
 </body>
 </html>
