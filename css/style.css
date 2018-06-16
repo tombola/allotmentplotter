@@ -1,6 +1,7 @@
 :root {
   --bed-color: brown;
   --plant-color: rgba(255,255,255,0.5);
+  --guide-color: rgba(0,0,0,0.5);
 }
 
 html, body {
@@ -18,10 +19,10 @@ html, body {
 }
 
 #allotment {
- /* width: 600px;
-  height: 420px;*/
-  border: 1px solid #f0f0f0;
   margin-bottom: 10vh;
+}
+
+#allotment .bed {
   background: var(--bed-color);
 }
 
@@ -31,7 +32,7 @@ html, body {
 
 .row-guide {
   fill: none;
-  stroke: #e0e0e0;
+  stroke: var(--guide-color);
   stroke-width: 1px;
   /*stroke-dashoffset: 1000;*/
 }
