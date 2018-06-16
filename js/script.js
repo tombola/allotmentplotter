@@ -15,6 +15,7 @@ $allotment = d3.select("#allotment");
     .append('circle')
     .attr("fill", 'none')
     .attr("stroke", '#000')
+    .attr("class", "plant")
 
   $plants.attr('cy', function(d, i) {
         return ((i + 1) * plantingDistance);

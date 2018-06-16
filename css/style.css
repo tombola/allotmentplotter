@@ -1,3 +1,8 @@
+:root {
+  --bed-color: brown;
+  --plant-color: rgba(255,255,255,0.5);
+}
+
 html, body {
   width: 100%;
   height: 100%;
@@ -17,7 +22,11 @@ html, body {
   height: 420px;*/
   border: 1px solid #f0f0f0;
   margin-bottom: 10vh;
-  background: #f0f0f0;
+  background: var(--bed-color);
+}
+
+.plant {
+  fill: var(--plant-color);
 }
 
 .row-guide {
