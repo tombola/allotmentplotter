@@ -17,7 +17,9 @@ from django.contrib import admin
 from django.urls import path
 from plotter.planner.views import PlannerView
 
+admin.site.site_header = "Allotment Plotter Admin"
+
 urlpatterns = [
-    path('', PlannerView.as_view(), name="planner"),
-    path('admin/', admin.site.urls),
+    path("", PlannerView.as_view(), name="planner"),
+    path("admin/", admin.site.urls),
 ]
